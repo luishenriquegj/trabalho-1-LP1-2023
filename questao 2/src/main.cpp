@@ -52,11 +52,8 @@ int main() {
             animalName="";
         }
         if (menu == 3) {
-            cout << "................................." << endl;
-            cout << "what species are you looking for?" << endl;
-            cin >> species;
+            zoo.getSpeciesData();
             //getSpeciesData(species, animals);
-            species="";
         }
         }
          if (menu == 4) {

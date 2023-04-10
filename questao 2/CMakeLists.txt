@@ -5,4 +5,5 @@ include_directories (include)
 
 add_executable (program
   src/main.cpp
-  src/Employee.cpp)
+  src/animal.cpp
+  src/zoo.cpp)

@@ -1,9 +1,11 @@
 #ifndef ZOO_H
 #define ZOO_H
 
+#include "Animal.h"
+
 #include <vector>
 #include <string>
-#include "Animal.h"
+
 
 
 class  Zoo {
