@@ -11,19 +11,16 @@ using namespace std;
 int main() {
 
     int menu = 1;
-    string animalName = "";
-    int employeeWage = 0;
-    int employeeWageMultiplier = 0;
     string species = "";
     
 
-    Animal animal;
     vector < Animal > animals = {
         Animal("Pedro", 15, "Monkey"),
         Animal("Joao", 9, "Monkey"),
         Animal("Matheus", 20, "Lion"),
         Animal("Felipe", 24, "Lion")
     };
+
     Zoo zoo(animals);
 
     while (menu != 4) {
