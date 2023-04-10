@@ -13,7 +13,7 @@ Zoo::Zoo( vector <Animal> animals) {
 
 
 
-void Zoo::getSpeciesData() {
+void Zoo::printSpeciesData() {
     string query;
     cout << "insert animal's species:" << endl;
     cin >> query;

@@ -45,7 +45,7 @@ int main() {
             zoo.deleteAnimalsEntries();
         }
         if (menu == 3) {
-            zoo.getSpeciesData();
+            zoo.printSpeciesData();
         }
         }
          if (menu == 4) {
