@@ -32,6 +32,7 @@ float Book::getBookGradeSum() {
     for(int i=0;i<this->grade.size();i++){
         gradeSum = gradeSum + this->grade[i];
     }
+
     return gradeSum;
 };
 
@@ -43,5 +44,6 @@ float Book::getBookAverageGrade() {
     for(int i=0;i<this->grade.size();i++){
         gradeSum = gradeSum + this->grade[i];
     }
+
     return gradeSum/ this->grade.size();
 };
