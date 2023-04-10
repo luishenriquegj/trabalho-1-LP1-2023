@@ -30,7 +30,7 @@ int main() {
         cout << "................................." << endl;
         cout << "choose one of the following options:" << endl;
         cout << "1 - set new animal's data" << endl;
-        cout << "2 - get an animal's data" << endl;
+        cout << "2 - delete an animal's data from species database" << endl;
         cout << "3 - get a species data" << endl; 
         cout << "4 - end application" << endl;
         cin >> menu;
@@ -38,22 +38,17 @@ int main() {
 
         if (menu == 1) {
             cout << "................................." << endl;
-            animal.setAnimalData();
-            animals.push_back(animal);
-            cout << "animal: " << animal.getName() << " that has a age of: " << animal.getAge() << " was added to the " << animal.getSpecies()<<"'s" << " Database" << endl;
+            zoo.addAnimal();
+            
         }
 
        
         if (menu == 2) {
             cout << "................................." << endl;
-            cout << "what animal are you looking for?" << endl;
-            cin >> animalName;
-            //getAnimalData(animalName, animals);
-            animalName="";
+            zoo.deleteAnimalsEntries();
         }
         if (menu == 3) {
             zoo.getSpeciesData();
-            //getSpeciesData(species, animals);
         }
         }
          if (menu == 4) {

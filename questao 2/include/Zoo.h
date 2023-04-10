@@ -17,7 +17,7 @@ public:
   Zoo( std::vector <Animal> animals);
   void getSpeciesData();
   void deleteAnimalsEntries();
-  void addAnimal(Animal animal);
+  void addAnimal();
 };
 
 
