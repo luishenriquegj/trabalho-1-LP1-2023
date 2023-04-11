@@ -1,6 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -20,10 +21,17 @@ class Person{
     int getAge();
     double getHeight();
     void printPersonData();
+    friend ostream& operator<<(ostream& os, const Person& person)
+    {
+        os << "name:" person.name << "age:" << person.age << "height:" << person.height;
+        return os;
+    } 
+
 
     bool operator>(const Person& person) const {
         return height > person.height;
     }
+
 };
 
 
