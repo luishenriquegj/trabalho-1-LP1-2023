@@ -14,6 +14,12 @@ class Person{
     double height;
 
     public: 
+    
+    friend std::ostream& operator<<(std::ostream& os,Person &person) {
+        os<<" the taller person is : \n " << "name: " << person.getName() << " \n age: " << person.getAge() << " \n height: " << person.getHeight()<<std::endl;
+        return os;
+    }; 
+
     Person(std::string name, int age, double height);
     Person();
 
@@ -21,16 +27,14 @@ class Person{
     int getAge();
     double getHeight();
     void printPersonData();
-    friend ostream& operator<<(ostream& os, const Person& person)
-    {
-        os << "name:" person.name << "age:" << person.age << "height:" << person.height;
-        return os;
-    } 
-
+    void setName();
+    void setAge();
+    void setHeight();
+    void setAllInfo();
 
     bool operator>(const Person& person) const {
         return height > person.height;
-    }
+    };
 
 };
 
