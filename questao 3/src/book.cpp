@@ -36,6 +36,10 @@ float Book::getBookGradeSum() {
     return gradeSum;
 };
 
+int Book::getBookGradeSize() {
+    return grade.size();
+};
+
 
 
 float Book::getBookAverageGrade() {
