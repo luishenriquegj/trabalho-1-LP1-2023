@@ -17,9 +17,9 @@ int main() {
 
     vector < Book > books = {
         Book("nome", {5.0,4.5}, "Patrick Rothfuss"),
-        Book("O Temor do Sabio", {4.0,3.5}, "Patrick Rothfuss"),
-        Book("A musica do silencio", {2.0,3.0}, "Patrick Rothfuss"),
-        Book("H.P Lovecraft: Grandes Contos", {5.0,5.0}, "H.P Lovecraft")
+        Book("O Temor do Sabio", {4.0,1.5}, "Patrick Rothfuss"),
+        Book("A musica do silencio", {2.3,3.0}, "Patrick Rothfuss"),
+        Book("H.P Lovecraft: Grandes Contos", {2.4,3.0}, "H.P Lovecraft")
     };
     BookShelf bookShelf(books);
    
@@ -37,7 +37,6 @@ int main() {
             cout << "................................." << endl;
             bookShelf.getBookAverageGrade();
         }
-
         if (menu == 2) {
             cout << "................................." << endl;
             bookShelf.getAllBooksAverageGrade();

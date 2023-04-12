@@ -45,12 +45,14 @@ void BookShelf::addNewBook() {
 void BookShelf::getAllBooksAverageGrade() {
     string query;
     float averageGrade = 0.0;
+    int totalGrades =0;
 
     for (int i = 0; i < this->books.size(); i++) {
            averageGrade =  averageGrade +  this->books[i].getBookGradeSum();
+           totalGrades = totalGrades + books[i].getBookGradeSize();
     }
 
-    cout<< "average book grade:"<<averageGrade/this->books.size()<<endl;
+    cout<< "average book grade:"<<averageGrade/totalGrades<<endl;
    
 };
 
