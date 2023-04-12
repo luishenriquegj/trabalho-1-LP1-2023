@@ -18,6 +18,7 @@ class Book{
 
     float getBookGradeSum();
     float getBookAverageGrade();
+    int getBookGradeSize();
     std::string getBookTitle();
     std::string getBookAuthor();
 };
