@@ -16,7 +16,7 @@ class Person{
     public: 
     
     friend std::ostream& operator<<(std::ostream& os,Person &person) {
-        os<<" the taller person is : \n " << "name: " << person.getName() << " \n age: " << person.getAge() << " \n height: " << person.getHeight()<<std::endl;
+        os<<" the older person is : \n " << "name: " << person.getName() << " \n age: " << person.getAge() << " \n height: " << person.getHeight()<<std::endl;
         return os;
     }; 
 
