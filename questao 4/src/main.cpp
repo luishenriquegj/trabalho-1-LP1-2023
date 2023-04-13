@@ -30,7 +30,7 @@ int main() {
     while (menu != 3) {
         cout << "................................." << endl;
         cout << "choose one of the following options:" << endl;
-        cout << "1 - compare heights" << endl;
+        cout << "1 - compare ages" << endl;
         cout << "2 - edit person entry:" << endl;
         cout << "3 - end application" << endl;
         cin >> menu;
