@@ -8,11 +8,15 @@
 using namespace std;
 
 template <typename T>
+void compareFunc(T param1, T param2) {
+    
+    if(param1>param2) {
+        cout<<"the older person is:"<<endl<<param1<<endl;
+    }else {
+        cout<<"the older person is:"<<endl<<param2<<endl;
+    };
 
-Person print(T object) {
-   cout<<object<<endl;
-   return object;
-}
+};
 
 
 
@@ -37,17 +41,14 @@ int main() {
         cout << "................................." << endl;   
 
         if (menu == 1) {
-            cout << "................................." << endl;
             cout << "avaliable options to compare:" << endl;
-            person1.printPersonData();
-            cout<<"to:"<<endl;
-            person2.printPersonData();
+            cout<<person1;
             cout << "................................." << endl;
-            if(person1>person2) {
-                cout<<person1;
-            }else {
-                cout<<person2;
-            }
+            cout<<"to:"<<endl;
+            cout << "................................." << endl;
+            cout<<person2;
+            cout << "................................." << endl;
+           compareFunc(person1,person2);
         }
         if(menu == 2) {
             cout << "avaliable person's data to edit" << endl;
