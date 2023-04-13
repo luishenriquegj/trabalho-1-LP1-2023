@@ -33,7 +33,7 @@ class Person{
     void setAllInfo();
 
     bool operator>(const Person& person) const {
-        return height > person.height;
+        return age > person.age;
     };
 
 };
